@@ -1,0 +1,126 @@
+/* NAVBAR */
+.navbar-light .navbar-toggler {
+    padding: 5px 5px;
+    background: $darkness;
+    border-radius: 50px;
+    outline: none !important;
+    overflow: hidden !important;
+    &:hover {
+        border: 3px solid $lightness;
+    }
+}
+
+.nav-link, .navbar-brand  {
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    color: $lightness;
+    background-image: none !important;
+}
+
+.dropdown-item:active {
+    color: $lightness !important;
+    background: $darkness !important;
+}
+
+/* BTNS */
+.btn-primary {
+    background-color: $honeycomb !important;
+    color: $darkness !important;
+    border: 3px solid $honeycomb !important;
+
+    &:hover, &:focus {
+        transition: 0.5s !important;
+        background: $darkness !important;
+        color: $honeycomb !important;
+        border: 3px solid $darkness!important;
+    }
+}
+
+.btn-secondary {
+    background-color: $darkness !important;
+    color: $honeycomb !important;
+    border: 3px solid $darkness !important;
+    
+    &:hover, &:focus {
+        transition: 0.5s !important;
+        background: $honeycomb !important;
+        color: $darkness !important;
+        border: 3px solid $honeycomb !important;
+    }
+}
+
+.btn-danger {
+    background-color: $red !important;
+    color: $lightness !important;
+    border: 3px solid $red !important;
+
+    &:hover, &:focus {
+        transition: 0.5s !important;
+        background: $deepred !important;
+        border: 3px solid $deepred !important;
+    }
+}
+
+.btn.transp {
+    background-color: $darkness !important;
+    color: $honeycomb !important;
+    border: 3px solid $darkness !important;
+
+    &:hover, &:focus {
+        transition: 0.5s !important;
+        color: $darkness !important;
+        background: transparent !important;
+    }
+}
+
+.btn {
+    transition: 0.5s !important;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+
+    &:active {
+        transition: none !important;
+        transform: translateY(2px) !important;
+    }
+}
+
+/* MODALS*/
+.modal-content {
+    border: 2px solid $darkness !important;
+}
+
+.btn-close {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: 1px solid $darkness !important;
+}
+
+/* BSPROPS */
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+) !default;
+
+$theme-colors: (
+  "primary":    $honeycomb,
+  "secondary":  $darkness,
+);
